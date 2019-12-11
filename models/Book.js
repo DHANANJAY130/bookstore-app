@@ -4,10 +4,10 @@ var BookSchema=new mongoose.Schema({
     author:String,
     description:String,
    published_date:Date,
-    publisher:String,
-    update_date:{
-        type:Date,
-        default:Date.now
-    }
+    publisher:String
+    // update_date:{
+    //     type:Date,
+    //     default:Date.now
+    // }
 })
 module.exports=mongoose.model('Book',BookSchema);

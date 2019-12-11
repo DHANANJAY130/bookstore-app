@@ -8,7 +8,8 @@ var book = require('./routes/book');
 var auth = require('./routes/auth');
 var mongoose=require('mongoose');
 mongoose.Promise=require('bluebird');
-mongoose.connect('mongodb://localhost:27017/adminportaldb',{
+// mongoose.connect('mongodb://localhost:27017/adminportaldb',{
+mongoose.connect('mongodb+srv://djay124:djay124@cluster0-kjwwv.mongodb.net/adminportaldb?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     promiseLibrary:require('bluebird')})
     .then(()=> console.log('connection is successful'))
